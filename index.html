@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fiber Max — إنترنت منزلي فايبر و5G</title>
+<meta name="description" content="Fiber Max — عروض الإنترنت المنزلي فايبر و5G — تواصل واشتراك عبر واتساب أو الاتصال.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue:#0788d9;
+  --blue2:#0069c7;
+  --deep:#0756a9;
+  --cyan:#19b7ef;
+  --light:#eaf8ff;
+  --ink:#07539e;
+  --yellow:#ffd800;
+  --green:#20c66b;
+  --white:#fff;
+  --shadow:0 18px 45px rgba(0,91,160,.16);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Cairo",Tahoma,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 15% 8%, rgba(22,185,244,.18), transparent 28%),
+    linear-gradient(180deg,#f7fdff 0%,#eaf8ff 45%,#f7fdff 100%);
+  color:var(--ink);
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,94%);margin:auto}
+.topbar{
+  background:rgba(255,255,255,.92);
+  border-bottom:1px solid rgba(0,115,190,.12);
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(12px);
+}
+.topbar-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo-wrap img{width:205px;display:block;mix-blend-mode:multiply}
+.nav{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.nav a{padding:10px 15px;border-radius:12px;font-weight:800;color:#075da7}
+.nav a:hover{background:#e6f7ff}
+.hero{
+  position:relative;overflow:hidden;
+  padding:26px 0 34px;
+}
+.hero:before{
+  content:"";position:absolute;left:-8%;right:-8%;top:0;height:180px;
+  background:linear-gradient(170deg,#0079d4,#19b9ef);
+  border-radius:0 0 50% 18%;
+  z-index:-1;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:center}
+.brand-card{
+  background:rgba(255,255,255,.93);border-radius:28px;padding:18px 22px;
+  box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.8);
+}
+.brand-card h1{margin:0 0 5px;font-size:clamp(28px,4vw,48px);line-height:1.15;font-weight:900;color:#0755a1}
+.brand-card p{margin:4px 0;color:#176aa8;font-size:18px;font-weight:700}
+.brand-logo{width:min(330px,80%);margin-bottom:4px}
+.offer{
+  background:linear-gradient(135deg,#0879d1,#075bb5);
+  color:white;border-radius:30px;padding:24px 26px;text-align:center;
+  box-shadow:0 22px 55px rgba(0,96,176,.24);
+  position:relative;overflow:hidden;
+}
+.offer:after,.offer:before{content:"";position:absolute;border:3px solid rgba(255,255,255,.6);border-radius:50%;width:36px;height:36px}
+.offer:before{left:18px;top:20px;border-right-color:transparent;border-bottom-color:transparent}
+.offer:after{right:18px;bottom:18px;border-left-color:transparent;border-top-color:transparent}
+.offer .small{font-size:20px;font-weight:800}
+.offer .price-line{display:flex;justify-content:center;align-items:baseline;gap:14px;flex-wrap:wrap;margin:3px 0}
+.offer .big{font-size:clamp(55px,9vw,88px);font-weight:900;line-height:1;color:var(--yellow);text-shadow:0 2px 0 rgba(0,0,0,.06)}
+.offer .sr{font-size:23px;font-weight:900;color:var(--yellow)}
+.offer .now{font-size:clamp(27px,4vw,44px);font-weight:900}
+.offer .sub{font-size:15px;opacity:.9;margin-top:8px}
+.section-title{text-align:center;margin:20px 0 18px}
+.section-title h2{margin:0;font-size:30px;font-weight:900}
+.section-title p{margin:3px 0;color:#377ba9;font-weight:700}
+.features{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:10px
+}
+.feature{
+  background:rgba(255,255,255,.9);border:1px solid #b9e5f8;border-radius:20px;
+  padding:18px 10px;text-align:center;box-shadow:0 9px 24px rgba(0,91,160,.07);
+}
+.feature .icon{font-size:34px;display:block;margin-bottom:7px}
+.feature strong{display:block;font-size:15px;line-height:1.45}
+.feature span{font-size:12px;color:#4f86ad}
+.visuals{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center;margin:20px 0}
+.visual-card{background:white;border-radius:22px;padding:12px;box-shadow:var(--shadow);overflow:hidden}
+.visual-card img{width:100%;height:175px;object-fit:cover;border-radius:16px;display:block}
+.iphone-card{position:relative}
+.iphone-card img{object-fit:contain;background:#f4fbff}
+.win-badge{
+  background:linear-gradient(135deg,#0755ad,#008de0);color:#fff;border-radius:24px;
+  padding:20px;text-align:center;height:100%;display:flex;flex-direction:column;justify-content:center
+}
+.win-badge .gift{font-size:42px}
+.win-badge h3{margin:2px 0;font-size:28px;color:var(--yellow)}
+.win-badge p{margin:2px 0;font-weight:700}
+.table-card{
+  background:rgba(255,255,255,.96);border-radius:24px;overflow:hidden;
+  box-shadow:var(--shadow);border:1px solid #bde7f8;margin:22px 0
+}
+.table-head{
+  background:linear-gradient(90deg,#087ad2,#075fb4);color:#fff;
+  padding:15px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px
+}
+.table-head h3{margin:0;font-size:22px}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:650px}
+th,td{padding:14px 12px;text-align:center;border:1px solid #cce9f7;font-weight:800}
+th{background:#0a84d8;color:#fff}
+td{color:#0b5a9e;background:#fff}
+tr:nth-child(even) td{background:#f4fbff}
+.highlight{font-size:19px;color:#0a62b0}
+.unknown{letter-spacing:3px;color:#777}
+.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.package{
+  background:white;border:1px solid #bde5f7;border-radius:22px;padding:20px;
+  box-shadow:0 12px 30px rgba(0,92,155,.1);position:relative;overflow:hidden
+}
+.package.active{border:2px solid #0a8bdc;transform:translateY(-3px)}
+.package .speed{font-size:30px;font-weight:900;color:#075eb0}
+.package .monthly{font-size:15px;color:#4d83a7}
+.package .pprice{font-size:33px;font-weight:900;color:#087bd1;margin:8px 0}
+.package button,.cta-btn{
+  border:0;cursor:pointer;font-family:inherit;font-weight:900;border-radius:14px;
+  padding:12px 17px;background:linear-gradient(135deg,#08a9e8,#075fc0);color:#fff;
+  box-shadow:0 8px 18px rgba(0,105,190,.18);transition:.2s
+}
+.package button:hover,.cta-btn:hover{transform:translateY(-2px)}
+.fiveg{margin-top:28px}
+.notes{background:#fff;border:1px solid #bfe5f7;border-radius:20px;padding:15px 18px;font-weight:800;line-height:1.9}
+.contact{
+  margin-top:30px;padding:25px 20px 42px;position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#e6f8ff,#fff)
+}
+.contact-inner{text-align:center}
+.contact h2{margin:0 0 4px;font-size:25px}
+.number{font-size:clamp(34px,7vw,64px);font-weight:900;letter-spacing:2px;direction:ltr;color:#075bb0}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+.action{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:190px;
+  padding:14px 20px;border-radius:16px;color:white;font-weight:900;box-shadow:0 10px 24px rgba(0,91,160,.18)
+}
+.call{background:linear-gradient(135deg,#087ed5,#0759ae)}
+.whatsapp{background:linear-gradient(135deg,#24d366,#11a94d)}
+footer{text-align:center;padding:18px;color:#5687a7;font-size:13px}
+.floating-actions{position:fixed;left:18px;bottom:18px;z-index:80;display:flex;flex-direction:column;gap:10px}
+.float{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:26px;box-shadow:0 12px 25px rgba(0,0,0,.18);font-weight:900}
+.float.call{background:#087bd1}
+.float.whatsapp{background:#20c66b}
+.toast{
+  position:fixed;right:50%;bottom:25px;transform:translateX(50%) translateY(20px);
+  background:#083f77;color:white;padding:12px 18px;border-radius:13px;opacity:0;
+  pointer-events:none;transition:.25s;z-index:100;font-weight:800
+}
+.toast.show{opacity:1;transform:translateX(50%) translateY(0)}
+@media (max-width:850px){
+  .hero-grid{grid-template-columns:1fr}
+  .features{grid-template-columns:repeat(3,1fr)}
+  .visuals{grid-template-columns:1fr 1fr}
+  .package-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .topbar-inner{min-height:72px}
+  .nav{display:none}
+  .logo-wrap img{width:165px}
+  .hero{padding-top:18px}
+  .features{grid-template-columns:repeat(2,1fr)}
+  .visuals{grid-template-columns:1fr}
+  .visual-card img{height:150px}
+  .offer{padding:20px 14px}
+  .brand-card{padding:15px}
+  .number{font-size:39px}
+  .action{width:100%;max-width:340px}
+}
+
+/* Fiber Max premium visual system */
+:root{--blue:#087fe0;--blue2:#0756b5;--deep:#063d87;--cyan:#18c9f4;--light:#eefaff;--ink:#073f83;--yellow:#ffd43b;--shadow:0 20px 55px rgba(4,72,145,.13)}
+body{background:radial-gradient(circle at 8% 0%,rgba(24,201,244,.15),transparent 25%),radial-gradient(circle at 92% 12%,rgba(8,127,224,.10),transparent 22%),linear-gradient(180deg,#f9fdff 0%,#eef9ff 48%,#fff 100%);color:var(--ink)}
+.container{width:min(1180px,92%)}
+.topbar{background:rgba(255,255,255,.90);border-bottom:1px solid rgba(7,86,181,.10);box-shadow:0 8px 28px rgba(0,65,130,.06)}
+.topbar-inner{min-height:88px;gap:24px}.logo-wrap{display:flex;align-items:center}.logo-wrap img{width:220px;filter:drop-shadow(0 5px 12px rgba(4,77,145,.10));mix-blend-mode:normal}
+.nav{gap:4px}.nav a{padding:11px 16px;border-radius:14px;color:#174f89;transition:.2s}.nav a:hover{background:#eaf8ff;color:#066fc9;transform:translateY(-1px)}
+.cta-btn{padding:13px 20px!important;border-radius:15px!important;background:linear-gradient(135deg,#11bde9,#0757b7)!important;box-shadow:0 12px 26px rgba(4,100,190,.22)!important}
+.hero{padding:38px 0 46px}.hero:before{height:235px;left:-10%;right:-10%;background:linear-gradient(135deg,#0758b8 0%,#078fe3 48%,#17c7ef 100%);border-radius:0 0 55% 12%;opacity:.98}
+.hero:after{content:"";position:absolute;top:34px;right:5%;width:280px;height:280px;border:1px solid rgba(255,255,255,.18);border-radius:50%;box-shadow:0 0 0 35px rgba(255,255,255,.035),0 0 0 70px rgba(255,255,255,.025);z-index:-1}
+.hero-grid{grid-template-columns:1.05fr .95fr;gap:28px}.brand-card{border-radius:30px;padding:24px 28px;background:rgba(255,255,255,.97);border:1px solid rgba(255,255,255,.9);box-shadow:0 24px 65px rgba(2,71,140,.16)}
+.brand-logo{width:min(370px,88%);margin-bottom:10px}.brand-card h1{font-size:clamp(30px,4vw,50px);color:#073f83}.brand-card p{color:#216d9e}.offer{border-radius:30px;padding:30px 28px;box-shadow:0 25px 65px rgba(1,68,139,.25);background:linear-gradient(145deg,#064ca8,#0789df 72%,#16c6ee)}
+.offer:before,.offer:after{width:52px;height:52px;border-width:2px}.offer .big{font-size:clamp(60px,9vw,94px)}
+.features{gap:14px;margin-top:4px}.feature{border:1px solid rgba(125,202,235,.55);border-radius:22px;padding:20px 12px;background:rgba(255,255,255,.96);box-shadow:0 12px 28px rgba(0,75,140,.07);transition:.2s}.feature:hover{transform:translateY(-4px);box-shadow:0 18px 34px rgba(0,75,140,.12);border-color:#73c8ec}
+.section-title{margin:34px 0 20px}.section-title h2{font-size:32px;color:#073f83}.section-title p{color:#4b7e9f}
+.visuals{gap:18px;margin:24px 0}.visual-card{border-radius:24px;padding:13px;box-shadow:0 18px 42px rgba(0,74,140,.11);border:1px solid #d7edf8}.visual-card img{height:190px;border-radius:18px}.win-badge{border-radius:24px;background:linear-gradient(145deg,#064ca8,#078fe3);box-shadow:inset 0 1px 0 rgba(255,255,255,.15)}
+.table-card{border-radius:26px;margin:28px 0;box-shadow:0 20px 48px rgba(0,74,140,.10)}.table-head{padding:17px 20px;background:linear-gradient(90deg,#064ca8,#078fe3)}th{background:#087fd4}td{padding:15px 12px}
+.package-grid{gap:18px}.package{border-radius:24px;padding:22px;border:1px solid #d2ebf7;box-shadow:0 14px 34px rgba(0,76,140,.09);transition:.22s}.package:hover{transform:translateY(-5px);box-shadow:0 22px 42px rgba(0,76,140,.14)}.package.active{border:2px solid #0a8bdc;box-shadow:0 18px 42px rgba(0,139,220,.17)}
+.notes{border-radius:22px;border-color:#d2ebf7;box-shadow:0 10px 25px rgba(0,76,140,.06)}
+.contact{margin-top:38px;padding:32px 20px 48px;background:linear-gradient(180deg,#e9f9ff,#fff);border-top:1px solid #d9eff8}.number{color:#064c9f}.action{border-radius:17px}.floating-actions{left:20px;bottom:20px}.float{box-shadow:0 14px 30px rgba(0,60,120,.20)}
+footer{padding:22px;color:#5b86a5}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero:after{display:none}.features{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.topbar-inner{min-height:76px}.logo-wrap img{width:178px}.hero{padding-top:25px}.hero:before{height:195px}.features{grid-template-columns:repeat(2,1fr)}.feature{padding:16px 8px}.visual-card img{height:160px}.brand-card{padding:19px}.offer{padding:23px 16px}}
+
+/* Fiber Max — mobile-first finishing layer */
+@media (max-width: 600px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .container{width:calc(100% - 24px);max-width:100%}
+  .topbar{position:sticky;top:0}
+  .topbar-inner{min-height:68px;gap:8px;justify-content:center}
+  .logo-wrap{width:100%;justify-content:center}
+  .logo-wrap img{width:min(178px,72vw);height:auto}
+  .hero{padding:18px 0 30px}
+  .hero:before{height:170px;left:-24%;right:-24%;border-radius:0 0 48% 12%}
+  .hero-grid{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+  .brand-card,.offer{width:100%;border-radius:22px}
+  .brand-card{padding:16px 14px;text-align:center}
+  .brand-logo{width:min(280px,82vw);max-width:100%;margin:0 auto 8px}
+  .brand-card h1{font-size:clamp(25px,8vw,34px);line-height:1.2}
+  .brand-card p{font-size:14px;line-height:1.7}
+  .offer{padding:20px 14px;text-align:center}
+  .offer .big{font-size:clamp(50px,16vw,72px);line-height:1}
+  .offer h2{font-size:20px}
+  .offer p{font-size:13px;line-height:1.7}
+  .features{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .feature{min-width:0;border-radius:17px;padding:13px 7px}
+  .feature strong{font-size:13px;line-height:1.45;display:block}
+  .feature span,.feature small{font-size:11px;line-height:1.5}
+  .section-title{margin:27px 0 14px;text-align:center}
+  .section-title h2{font-size:24px;line-height:1.35;margin-bottom:5px}
+  .section-title p{font-size:12px;line-height:1.7}
+  .visuals{grid-template-columns:1fr;gap:12px;margin:17px 0}
+  .visual-card{padding:9px;border-radius:19px}
+  .visual-card img{width:100%;height:auto;max-height:240px;object-fit:cover;border-radius:14px}
+  .win-badge{border-radius:20px;padding:18px 12px}
+  .table-card{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;margin:20px 0}
+  table{min-width:620px;font-size:12px}
+  th,td{padding:11px 9px;white-space:nowrap}
+  .table-head{padding:13px 14px;font-size:14px}
+  .package-grid{grid-template-columns:1fr;gap:12px}
+  .package{padding:17px;border-radius:20px}
+  .package h3{font-size:18px}
+  .package p,.package li{font-size:13px;line-height:1.7}
+  .notes{padding:15px;border-radius:18px;font-size:12px;line-height:1.8}
+  .contact{margin-top:26px;padding:25px 12px 36px;text-align:center}
+  .number{font-size:clamp(28px,9vw,40px);line-height:1.2}
+  .action{width:100%;max-width:none;min-height:50px;padding:13px 16px}
+  .floating-actions{left:10px;right:10px;bottom:10px;display:flex;justify-content:center;gap:8px}
+  .float{min-width:0;flex:1;max-width:180px;padding:11px 10px;font-size:12px}
+  footer{padding:18px 10px;font-size:11px;text-align:center;line-height:1.7}
+}
+@media (max-width:380px){
+  .topbar-inner{min-height:58px!important}
+  .topbar .logo-wrap{width:120px!important;max-width:40vw!important;flex-basis:120px!important}
+.topbar .logo-wrap img{width:100%!important;max-width:none!important;max-height:36px!important}
+  .topbar .cta-btn{padding:8px 10px!important;font-size:11px!important}
+  .container{width:calc(100% - 18px)}
+  .logo-wrap img{width:160px}
+  .features{gap:7px}
+  .feature{padding:11px 5px}
+  .feature strong{font-size:12px}
+  .offer .big{font-size:48px}
+  table{min-width:560px}
+}
+
+
+/* Mobile table redesign: convert wide tables into responsive cards */
+@media (max-width:600px){
+  .table-card{overflow:hidden}
+  .table-wrap{overflow:visible;width:100%}
+  table{width:100%;min-width:0!important;border-collapse:separate;border-spacing:0 10px;font-size:12px}
+  table thead{display:none}
+  table tbody{display:block;width:100%}
+  table tbody tr{display:grid;width:100%;grid-template-columns:1fr 1fr;background:#fff;border:1px solid #d3ebf7;border-radius:16px;overflow:hidden;box-shadow:0 7px 18px rgba(0,76,140,.07);margin:0 0 10px}
+  table tbody tr:last-child{margin-bottom:0}
+  table td{display:flex;align-items:center;justify-content:center;min-width:0;width:auto!important;white-space:normal!important;word-break:break-word;padding:12px 8px;border:0;border-bottom:1px solid #e5f3f9;border-left:1px solid #e5f3f9;background:#fff!important;color:#075a9f;line-height:1.5}
+  table td:nth-child(odd){border-left:0}
+  table td:nth-last-child(-n+2){border-bottom:0}
+  table td:first-child{font-weight:900;color:#064c9f;background:#f3fbff!important}
+  table td:nth-child(1)::before{content:'السرعة';display:block;width:100%;font-size:10px;color:#6b94ae;margin-bottom:2px;font-weight:700}
+  table td:nth-child(2)::before{content:'السعر';display:block;width:100%;font-size:10px;color:#6b94ae;margin-bottom:2px;font-weight:700}
+  table td:nth-child(3)::before{content:'التركيب';display:block;width:100%;font-size:10px;color:#6b94ae;margin-bottom:2px;font-weight:700}
+  table td:nth-child(4)::before{content:'العرض';display:block;width:100%;font-size:10px;color:#6b94ae;margin-bottom:2px;font-weight:700}
+  table td:only-child{grid-column:1 / -1}
+  table td .cta-btn{font-size:12px;padding:9px 12px!important;width:100%;max-width:130px}
+  .highlight{font-size:16px}
+}
+@media (max-width:600px){
+  /* 5G table matches Fiber table width and fills the same card area */
+  #fiveg .table-card{width:100%;max-width:100%;margin-left:0;margin-right:0}
+  #fiveg .table-wrap{width:100%}
+  #fiveg table{width:100%!important;min-width:0!important}
+  #fiveg table tbody tr{grid-template-columns:repeat(3,minmax(0,1fr));width:100%}
+  #fiveg table td{width:auto!important;min-width:0;word-break:break-word}
+  #fiveg table td:nth-child(3) .cta-btn{width:100%;max-width:100%;box-sizing:border-box}
+}
+
+@media (max-width:420px){
+  #fiveg table tbody tr{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #fiveg table td{font-size:10px;padding:10px 5px}
+  #fiveg table td::before{font-size:8px!important}
+  #fiveg table td .cta-btn{font-size:10px!important;padding:8px 4px!important}
+}
+
+@media (max-width:420px){
+  table tbody tr{grid-template-columns:1fr 1fr}
+  table td{font-size:11px;padding:10px 6px}
+  table td::before{font-size:9px!important}
+}
+
+/* Premium responsive tables */
+.table-card{width:100%;max-width:100%;}
+.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+table{min-width:0;width:100%;table-layout:fixed;}
+th,td{word-break:break-word;overflow-wrap:anywhere;}
+.table-card table th{font-size:15px;letter-spacing:.1px;}
+.table-card table td{font-size:15px;}
+.table-card tbody tr{transition:transform .18s ease,box-shadow .18s ease;}
+.table-card tbody tr:hover{transform:translateY(-1px);}
+@media (max-width:600px){
+  /* Compact professional mobile header */
+  .topbar-inner{min-height:62px!important;padding:7px 0!important;display:flex;align-items:center;justify-content:space-between!important;gap:10px!important}
+  .logo-wrap{width:auto!important;flex:0 1 auto!important;justify-content:flex-start!important;display:flex!important;align-items:center!important}
+  .topbar .logo-wrap{width:132px!important;max-width:42vw!important;height:40px!important;overflow:visible!important;flex:0 0 132px!important;display:flex!important;align-items:center!important}
+.topbar .logo-wrap img{width:100%!important;max-width:none!important;height:auto!important;max-height:40px!important;display:block!important;object-fit:contain!important;object-position:left center!important}
+  .topbar .cta-btn{flex:0 0 auto!important;padding:9px 12px!important;font-size:12px!important;line-height:1!important;border-radius:11px!important;white-space:nowrap!important}
+  .container{width:min(100% - 24px,1120px)}
+  .table-card{border-radius:18px;margin:16px 0;box-shadow:0 10px 26px rgba(0,92,155,.12);}
+  .table-wrap{overflow:visible;padding:8px;}
+  .table-card table,.table-card thead,.table-card tbody,.table-card tr,.table-card th,.table-card td{display:block;width:100%;}
+  .table-card thead{display:none;}
+  .table-card tbody{display:grid;gap:10px;}
+  .table-card tbody tr{background:linear-gradient(180deg,#ffffff 0%,#f5fbff 100%);border:1px solid #c8e8f6;border-radius:15px;padding:10px 11px;box-shadow:0 5px 14px rgba(0,92,155,.07);}
+  .table-card tbody tr:hover{transform:none;}
+  .table-card tbody td{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:42px;padding:8px 4px;border:0;border-bottom:1px dashed #d5eaf5;background:transparent!important;text-align:left;font-size:14px;color:#075a9e;}
+  .table-card tbody td:last-child{border-bottom:0;}
+  .table-card tbody td::before{content:attr(data-label);font-weight:900;color:#5683a3;text-align:right;flex:0 0 44%;}
+  .table-card tbody td:first-child{font-size:16px;font-weight:900;color:#0755a1;}
+  .table-card tbody td:first-child::before{color:#0755a1;}
+  .table-card tbody td .cta-btn,.table-card tbody td button{min-width:100px;padding:9px 12px;font-size:13px;}
+  .table-card .highlight{font-size:17px;font-weight:900;}
+  .table-card .unknown{letter-spacing:2px;}
+}
+
+
+/* Hero Fiber Max logo — prevent clipping on all screens */
+.brand-card .fiber-max-logo{
+  display:block;
+  width:min(330px,100%);
+  max-width:100%;
+  height:auto;
+  margin:0 auto 6px;
+  object-fit:contain;
+  object-position:center;
+}
+@media (max-width:600px){
+  .brand-card .fiber-max-logo{
+    width:min(300px,100%);
+    max-width:100%;
+    height:auto;
+    margin:0 auto 8px;
+  }
+}
+@media (max-width:380px){
+  .brand-card .fiber-max-logo{
+    width:min(270px,100%);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="logo-wrap" href="#top" aria-label="الرئيسية">
+      <img class="fiber-max-logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NjAiIGhlaWdodD0iMTkwIiB2aWV3Qm94PSIwIDAgNzYwIDE5MCI+PGRlZnM+IDxsaW5lYXJHcmFkaWVudCBpZD0iZm1HIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTlkM2ZmIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzA3ODdlNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA2NGNhYSIvPjwvbGluZWFyR3JhZGllbnQ+IDxsaW5lYXJHcmFkaWVudCBpZD0iZm1UIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDY0Y2FhIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDc4N2U2Ii8+PC9saW5lYXJHcmFkaWVudD4gPGZpbHRlciBpZD0iZm1TIiB4PSItMzAlIiB5PSItMzAlIiB3aWR0aD0iMTYwJSIgaGVpZ2h0PSIxNjAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iOSIgc3RkRGV2aWF0aW9uPSI5IiBmbG9vZC1jb2xvcj0iIzA3NWJiNSIgZmxvb2Qtb3BhY2l0eT0iLjIwIi8+PC9maWx0ZXI+PC9kZWZzPjxnIGZpbHRlcj0idXJsKCNmbVMpIj4gPGNpcmNsZSBjeD0iOTIiIGN5PSI5NSIgcj0iNzAiIGZpbGw9InVybCgjZm1HKSIvPiA8Y2lyY2xlIGN4PSI5MiIgY3k9Ijk1IiByPSI1NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjI4IiBzdHJva2Utd2lkdGg9IjIiLz4gPHBhdGggZD0iTTUzIDk2YzAtMjUgMTctNDMgMzktNDMgMTQgMCAyNyA4IDM0IDIxbC0xOCAxMGMtNC03LTktMTEtMTYtMTEtMTAgMC0xNyA5LTE3IDIzczcgMjMgMTcgMjNjNyAwIDEyLTQgMTYtMTFsMTggMTBjLTcgMTMtMjAgMjEtMzQgMjEtMjIgMC0zOS0xOC0zOS00M1oiIGZpbGw9IiNmZmYiLz4gPHBhdGggZD0iTTEwNCA3MGgxOHY1MmgtMTh6IiByeD0iOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjk2Ii8+IDxjaXJjbGUgY3g9IjEzMyIgY3k9IjY2IiByPSI2IiBmaWxsPSIjOGZmMWZmIi8+PC9nPjx0ZXh0IHg9IjE5MCIgeT0iOTYiIGZvbnQtZmFtaWx5PSJBcmlhbCxUYWhvbWEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSI2NSIgZm9udC13ZWlnaHQ9IjkwMCIgbGV0dGVyLXNwYWNpbmc9IjEiIGZpbGw9InVybCgjZm1UKSI+RklCRVIgTUFYPC90ZXh0PjxyZWN0IHg9IjE5MiIgeT0iMTExIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjMiIHJ4PSIyIiBmaWxsPSIjMTliN2VmIi8+PHRleHQgeD0iMTkwIiB5PSIxNDUiIGZvbnQtZmFtaWx5PSJUYWhvbWEsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzEzODljOCI+2YHYp9mK2KjYsSDZhdin2YPYsyDigKIg2KXZhtiq2LHZhtiqINij2LPYsdi5PC90ZXh0Pjwvc3ZnPg==" alt="Fiber Max">
+    </a>
+    <nav class="nav">
+      <a href="#fiber">باقات الفايبر</a>
+      <a href="#fiveg">باقات 5G</a>
+      <a href="#contact">التواصل</a>
+    </nav>
+    <a class="cta-btn" href="#contact">اشترك الآن</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="brand-card">
+      <img class="fiber-max-logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NjAiIGhlaWdodD0iMTkwIiB2aWV3Qm94PSIwIDAgNzYwIDE5MCI+PGRlZnM+IDxsaW5lYXJHcmFkaWVudCBpZD0iZm1HIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTlkM2ZmIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzA3ODdlNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA2NGNhYSIvPjwvbGluZWFyR3JhZGllbnQ+IDxsaW5lYXJHcmFkaWVudCBpZD0iZm1UIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDY0Y2FhIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDc4N2U2Ii8+PC9saW5lYXJHcmFkaWVudD4gPGZpbHRlciBpZD0iZm1TIiB4PSItMzAlIiB5PSItMzAlIiB3aWR0aD0iMTYwJSIgaGVpZ2h0PSIxNjAlIj48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iOSIgc3RkRGV2aWF0aW9uPSI5IiBmbG9vZC1jb2xvcj0iIzA3NWJiNSIgZmxvb2Qtb3BhY2l0eT0iLjIwIi8+PC9maWx0ZXI+PC9kZWZzPjxnIGZpbHRlcj0idXJsKCNmbVMpIj4gPGNpcmNsZSBjeD0iOTIiIGN5PSI5NSIgcj0iNzAiIGZpbGw9InVybCgjZm1HKSIvPiA8Y2lyY2xlIGN4PSI5MiIgY3k9Ijk1IiByPSI1NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjI4IiBzdHJva2Utd2lkdGg9IjIiLz4gPHBhdGggZD0iTTUzIDk2YzAtMjUgMTctNDMgMzktNDMgMTQgMCAyNyA4IDM0IDIxbC0xOCAxMGMtNC03LTktMTEtMTYtMTEtMTAgMC0xNyA5LTE3IDIzczcgMjMgMTcgMjNjNyAwIDEyLTQgMTYtMTFsMTggMTBjLTcgMTMtMjAgMjEtMzQgMjEtMjIgMC0zOS0xOC0zOS00M1oiIGZpbGw9IiNmZmYiLz4gPHBhdGggZD0iTTEwNCA3MGgxOHY1MmgtMTh6IiByeD0iOCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjk2Ii8+IDxjaXJjbGUgY3g9IjEzMyIgY3k9IjY2IiByPSI2IiBmaWxsPSIjOGZmMWZmIi8+PC9nPjx0ZXh0IHg9IjE5MCIgeT0iOTYiIGZvbnQtZmFtaWx5PSJBcmlhbCxUYWhvbWEsc2Fucy1zZXJpZiIgZm9udC1zaXplPSI2NSIgZm9udC13ZWlnaHQ9IjkwMCIgbGV0dGVyLXNwYWNpbmc9IjEiIGZpbGw9InVybCgjZm1UKSI+RklCRVIgTUFYPC90ZXh0PjxyZWN0IHg9IjE5MiIgeT0iMTExIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjMiIHJ4PSIyIiBmaWxsPSIjMTliN2VmIi8+PHRleHQgeD0iMTkwIiB5PSIxNDUiIGZvbnQtZmFtaWx5PSJUYWhvbWEsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzEzODljOCI+2YHYp9mK2KjYsSDZhdin2YPYsyDigKIg2KXZhtiq2LHZhtiqINij2LPYsdi5PC90ZXh0Pjwvc3ZnPg==" alt="Fiber Max">
+      <h1>إنترنت منزلي</h1>
+      <p>أسرع .. وأكثر استقراراً</p>
+      <p style="font-size:14px;margin-top:14px">عروض فايبر و5G بنفس الأسعار والمزايا الموضحة في الإعلان.</p>
+    </div>
+    <div class="offer">
+      <div class="small">عرض خاص لفايبر سرعة</div>
+      <div class="price-line">
+        <span class="now">200 الآن بسعر</span>
+        <span class="big">230</span><span class="sr">SR</span>
+      </div>
+      <div class="sub">عرض ديناميكي — اختر الباقة المناسبة وتواصل مباشرة</div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="features">
+    <div class="feature"><span class="icon">⚡</span><strong>سرعات عالية</strong><span>ومستقرة</span></div>
+    <div class="feature"><span class="icon">▣</span><strong>تلفزيون</strong><span>بجودة عالية (اختياري)</span></div>
+    <div class="feature"><span class="icon">◉</span><strong>باقات متعددة</strong><span>تناسب احتياجاتك</span></div>
+    <div class="feature"><span class="icon">🎮</span><strong>مثالي للألعاب</strong><span>والبث المباشر</span></div>
+    <div class="feature"><span class="icon">⌂</span><strong>إنترنت منزلي</strong><span>لجميع أفراد العائلة</span></div>
+  </div>
+
+  <div class="visuals">
+    <div class="win-badge">
+      <div class="gift">🎁</div>
+      <h3>فرصة تربح آيفون</h3>
+      <p>• الباقة تشمل مودم TV وخط ثابت مجاناً</p>
+      <p>• خط ثابت مجاني</p>
+    </div>
+  </div>
+</section>
+
+<section id="fiber" class="container">
+  <div class="section-title">
+    <h2>باقات الفايبر</h2>
+    <p>اختر السرعة المناسبة لك</p>
+  </div>
+  <div class="table-card">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>السرعة</th><th>السعر الشهري</th><th>سعر التركيب</th><th>سعر العرض</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="السرعة">سرعة 200</td><td data-label="السعر الشهري">200</td><td data-label="سعر التركيب">230 SR</td><td class="unknown" data-label="سعر العرض">...........</td></tr>
+          <tr><td data-label="السرعة">سرعة 300</td><td data-label="السعر الشهري">300</td><td data-label="سعر التركيب">287 SR</td><td class="highlight" data-label="سعر العرض">172 SR</td></tr>
+          <tr><td data-label="السرعة">سرعة 500</td><td data-label="السعر الشهري">500</td><td data-label="سعر التركيب">402 SR</td><td class="highlight" data-label="سعر العرض">241 SR</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="package-grid">
+    <article class="package">
+      <div class="speed">سرعة 200</div>
+      <div class="monthly">السعر الشهري</div>
+      <div class="pprice">200 SR</div>
+      <button onclick="order('فايبر سرعة 200 — 200 SR شهرياً')">اطلب هذه الباقة</button>
+    </article>
+    <article class="package">
+      <div class="speed">سرعة 300</div>
+      <div class="monthly">سعر العرض</div>
+      <div class="pprice">172 SR</div>
+      <button onclick="order('فايبر سرعة 300 — سعر العرض 172 SR')">اطلب هذه الباقة</button>
+    </article>
+    <article class="package">
+      <div class="speed">سرعة 500</div>
+      <div class="monthly">سعر العرض</div>
+      <div class="pprice">241 SR</div>
+      <button onclick="order('فايبر سرعة 500 — سعر العرض 241 SR')">اطلب هذه الباقة</button>
+    </article>
+  </div>
+</section>
+
+<section id="fiveg" class="container fiveg">
+  <div class="section-title">
+    <h2>📶 باقات 5G</h2>
+    <p>مودم بشريحة — سعر الباقة شامل الضريبة</p>
+  </div>
+  <div class="table-card">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>السرعة</th><th>سعر الباقة شامل الضريبة</th><th>الإجراء</th></tr></thead>
+        <tbody>
+          <tr><td data-label="السرعة">5G سرعة 100</td><td class="highlight" data-label="سعر الباقة شامل الضريبة">230 SR</td><td data-label="الإجراء"><button class="cta-btn" onclick="order('5G سرعة 100 — 230 SR')">اشترك</button></td></tr>
+          <tr><td data-label="السرعة">5G سرعة 200</td><td class="highlight" data-label="سعر الباقة شامل الضريبة">287 SR</td><td data-label="الإجراء"><button class="cta-btn" onclick="order('5G سرعة 200 — 287 SR')">اشترك</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="notes">
+    <div>• الباقة تشمل مودم TV وخط ثابت مجاناً</div>
+    <div>• خط ثابت مجاني</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-inner">
+    <h2>للتواصل والاستفسار</h2>
+    <div class="number">0536824776</div>
+    <div class="actions">
+      <a class="action whatsapp" href="https://wa.me/966536824776?text=مرحباً، أريد الاستفسار عن عروض الإنترنت المنزلي." target="_blank" rel="noopener">💬 واتساب</a>
+      <a class="action call" href="tel:+966536824776">☎ اتصال مباشر</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="floating-actions">
+  <a class="float whatsapp" href="https://wa.me/966536824776?text=مرحباً، أريد الاستفسار عن عروض الإنترنت المنزلي." target="_blank" rel="noopener" aria-label="واتساب">✆</a>
+  <a class="float call" href="tel:+966536824776" aria-label="اتصال">☎</a>
+</div>
+
+<div id="toast" class="toast">تم تجهيز طلبك — سيتم فتح واتساب</div>
+
+<footer>© 2026 — عروض الإنترنت المنزلي | للتواصل: 0536824776</footer>
+
+<script>
+const phoneIntl = "966536824776";
+function order(packageName) {
+  const message = "مرحباً، أريد الاشتراك في: " + packageName + "\nرقم التواصل: 0536824776";
+  const url = "https://wa.me/" + phoneIntl + "?text=" + encodeURIComponent(message);
+  const toast = document.getElementById("toast");
+  toast.textContent = "تم اختيار " + packageName + " — فتح واتساب";
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 1800);
+  window.open(url, "_blank", "noopener");
+}
+</script>
+</body>
+</html>
